@@ -1,0 +1,13 @@
+﻿@page
+@model IndexModel
+
+<h2>Lista de Produtos</h2>
+
+<ul>
+    @foreach (var p in Model.Products)
+    {
+        <li>@p.Name - R$ @p.Price</li>
+    }
+</ul>
+
+<a asp-page="/AddProduct">Adicionar Produto</a>
